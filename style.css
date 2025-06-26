@@ -119,9 +119,20 @@ section {
 .rightsection {
     flex: 1;
     display: flex;
+    
    
 }
 .box1 {
-    width: fit-content;
+    width: 50%;
     background-color: #FF6F00;
+    border-radius: 50px;
+    display: flex;
+    
 }
+.pato_pony {
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
