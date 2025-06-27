@@ -67,13 +67,15 @@ header {
     left: 50%;
     transform: translate(-93%, -50%);
     margin-left: 1%;
+    font-size: 1em;
     
 
 }
 
 .titulo{
     font-weight: bolder;
-    font-size: 2em;
+    font-size: 1.5em;
+    margin-bottom: 8%;
 }
 
 
@@ -111,6 +113,7 @@ section {
     display: flex;
     justify-content: space-between;
     margin-top: 8%;
+    
 }
 
 .leftsection1 {
@@ -121,15 +124,16 @@ section {
     margin-left: 5%;
     margin-top: 10%;
     
+    
 }
 .productdelmes {
     font-family: playfair-display-regular;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
 .infosection1 {
-    font-size: 1.1em;
+    font-size: 1em;
     margin-bottom: 2%;
     margin-right: 25%;
     line-height: 1.2;
@@ -151,39 +155,87 @@ section {
 .rightsection {
     flex: 1;
     display: flex;  
+    margin-right: 5%;
 }
 
 .imgpato {
-    width: 90%;
+    width: 100%;
     height: auto;
-    margin-top: 5%;
-    margin-left: 5%;
+    border-radius: 50px;
+    
     
 }
-
+.box1, .box2, .box3, .box4 {
+    position: relative; 
+    overflow: hidden; 
+    box-sizing: border-box;
+}
 .box1 {
     width: 90%;
     height: auto;
     background-color: #FF6F00;
-    padding: 20px;
+    padding: 5%;
     border-radius: 50px;
     margin-left: 5%;
 }   
+.product-card {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* desenfocar imagen al hacer hover */
+  .product-card:hover .imgpato {
+    filter: blur(4px);
+    transition: filter 0.3s ease;
+  }
+  
+  /* Overlay con precio oculto al inicio */
+  .overlay {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .product-card:hover .imgpato {
+    filter: blur(4px);
+    transition: filter 0.3s ease;
+  }
+  
+  .product-card:hover .overlay {
+    opacity: 1;
+  }
+  
+ 
+
  .box2 {
     width: 90%;
     height: auto;
     background-color: #FF4081;
-    padding: 20px;
+    padding: 5%;
     border-radius: 50px;
     margin-left: 5%;
     margin-top: 5%; 
  }
 
+
+
  .box3 {
     width: 90%;
     height: auto;
     background-color: #FFD500;
-    padding: 20px;
+    padding: 5%;
     border-radius: 50px;
     margin-left: 13%;
     
@@ -192,9 +244,10 @@ section {
     width: 90%;
     height: auto;
     background-color: #00E676;
-    padding: 20px;
+    padding: 5%;
     border-radius: 50px;
     margin-left: 13%;
+    margin-right: 5%;
     margin-top: 5%;
  }
 
@@ -204,7 +257,7 @@ section {
     display: flex;
     justify-content: space-between;
     margin-top: 10%;
-    padding: 20px;
+    padding: 8%;
     background-color: #F6DCE7;
  }
 
