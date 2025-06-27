@@ -118,23 +118,89 @@ section {
 }
 .rightsection {
     flex: 1;
-    display: flex;
-    
-   
+    display: flex;  
 }
-.box1 {
-    width: 50%;
-    background-color: #FF6F00;
-    border-radius: 50px;
-    display: flex;
-    
-}
-.pato_pony {
-    width: 50%;
+
+.imgpato {
+    width: 90%;
     height: auto;
+    margin-top: 5%;
+    margin-left: 5%;
+    
+}
+
+.box1 {
+    width: 90%;
+    height: auto;
+    background-color: #FF6F00;
+    padding: 20px;
+    border-radius: 50px;
+    margin-left: 5%;
+}   
+ .box2 {
+    width: 90%;
+    height: auto;
+    background-color: #FF4081;
+    padding: 20px;
+    border-radius: 50px;
+    margin-left: 5%;
+    margin-top: 5%; 
+ }
+
+ .box3 {
+    width: 90%;
+    height: auto;
+    background-color: #FFD500;
+    padding: 20px;
+    border-radius: 50px;
+    margin-left: 13%;
+    
+ }
+ .box4 {
+    width: 90%;
+    height: auto;
+    background-color: #00E676;
+    padding: 20px;
+    border-radius: 50px;
+    margin-left: 13%;
+    margin-top: 5%;
+ }
+
+ footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    padding: 20px;
+    background-color: #F6DCE7;
+ }
+
+.footerlogo {
+    width: 30%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.boxizquierda, .boxderecha {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.boxlogoup, .redesociales {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/*testing Gabi*/
-/*hola*/
+.boxlogoup {
+    margin-bottom: 10%;
+}
+
+.contacto {
+    font-family: playfair-display-regular;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+.ciudad {
+    margin-left: 5%;
+}
