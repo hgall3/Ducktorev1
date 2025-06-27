@@ -104,6 +104,7 @@ button:hover {
 }
 
 /* SECTION */
+
 section {
     display: flex;
     justify-content: space-between;
@@ -166,6 +167,8 @@ section {
     margin-top: 5%;
  }
 
+ /* FOOTER */
+
  footer {
     display: flex;
     justify-content: space-between;
@@ -196,11 +199,8 @@ section {
     margin-bottom: 10%;
 }
 
-.contacto {
+.contacto1 {
     font-family: playfair-display-regular;
     font-weight: bold;
     font-size: 1.4em;
-}
-.ciudad {
-    margin-left: 5%;
 }
