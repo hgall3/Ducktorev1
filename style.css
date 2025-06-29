@@ -25,7 +25,7 @@ nav {
     justify-content: left;
     
 }
-.sobrenosotras, .productos, .blog, .contacto, .carrito, .linea
+.sobrenosotras, .productos, .blog, .contacto, .carrito, .linea, .carrito1
  {
     display: inline-block;
     margin-top: 10%;
@@ -208,11 +208,6 @@ section {
     font-weight: bold;
   }
   
-  .product-card:hover .imgpato {
-    filter: blur(4px);
-    transition: filter 0.3s ease;
-  }
-  
   .product-card:hover .overlay {
     opacity: 1;
   }
@@ -251,7 +246,7 @@ section {
     margin-top: 5%;
  }
 
- /* FOOTER */
+ /*FOOTER*/
 
  footer {
     display: flex;
@@ -287,4 +282,150 @@ section {
     font-family: playfair-display-regular;
     font-weight: bold;
     font-size: 1.4em;
+}
+.hamburger-menu,
+.conocenos  {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navleft,
+    .productos,
+    .sobrenosotras,
+    .blog, 
+    .contacto,
+    .linea,
+    .carrito1,
+    .navlogo{
+      display: none;
+    }
+  
+    .hamburger-menu {
+      display: block;
+      margin: 10px;
+    }
+    .hamburger-menu img {
+        width: 3em;
+        height: auto;
+        cursor: pointer;
+        margin-top: 30%;
+    }
+    
+    nav {
+        display: flex;
+    }
+    .hamburger-menu,
+    .navleft
+     {
+        display: block;
+        justify-content:space-between;
+    }
+
+    h5,
+    .button-leermas {
+        display: none;
+    }
+    .conocenos {
+        display: block;
+        margin-top: -10%;
+        
+        
+    }
+    
+    .conocenos1 {
+        background-color: #FF4081;
+        border-radius: 14px;
+        padding: 5px 10px;
+        font-family: playfair-display-bold;
+        font-weight: bold;
+        font-size: 1em;
+        border-color: none;
+        border: none;
+        color: white;
+    }
+    .conocenos1:hover {
+        background-color: #ff6940;
+        color: #FFD500;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05); 
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    
+     .catalogo {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 5%; 
+    }
+
+    .leftsection1 {
+        text-align: center;
+        margin-bottom: 5%;
+        display: flex;
+    }
+
+    .titlesection1 {
+        font-size: 1.5em; 
+        font-weight: bold;
+        margin-bottom: 2%; 
+        text-align: center; 
+        
+        
+    }
+
+    .infosection1 {
+        font-size: 1em; 
+        line-height: 1.5; 
+        margin: 0 5%; 
+        
+    }
+
+    
+    .rightsection {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 10px; 
+        margin-top: 5%; 
+    }
+
+    .box1, .box2, .box3, .box4 {
+        width: 60%; 
+        height: auto; 
+        margin: 0 auto; 
+    }
+    .box1, .box3 {
+        margin-bottom: 3%;
+    }
+
+    .product-card {
+        position: relative;
+        overflow: hidden;
+        
+    }
+
+    .imgpato {
+        width: 100%; 
+        height: auto;
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5); 
+        color: white;
+        text-align: center;
+        padding: 10px;
+        display: none; 
+    }
+
+    .product-card:hover .overlay {
+        display: block; 
+    }
+
 }
