@@ -1,0 +1,140 @@
+h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5em;
+  position: absolute;
+  color: #ff4081; 
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+}
+
+.filterProducts{
+    display: flex;
+    margin: 20px;
+}
+
+.containeFilter{
+    margin-right: 20px;
+}
+
+.btnFilter{
+    display: none;
+}
+
+.filterButtons {
+  border: 3px solid #ff4081;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.filterProducts li{
+    list-style-type: none;
+}
+
+
+.productsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.productsContainer div {
+    max-width: 180px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.productsContainer div:hover {
+    transform: scale(1.02);
+}
+
+.productsContainer img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.productsContainer p {
+    margin: 0.5rem 0;
+}
+
+.productsContainer button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+.productsContainer button:hover {
+    background-color: #e73370;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .btnFilter{
+        display: block;
+        background-color: #ffffff;
+        color: white;
+        border: none;
+        padding: 0.6rem 1rem;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-bottom: 1rem;
+    }
+
+    .btnFilter img{
+        width: 40px;
+    }
+
+    .filterProducts{
+        display: block;
+    }
+
+    .category {
+        display: none;
+    }
+
+    .category.active {
+        display: block;
+    }
+            
+    .productsContainer {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .productsContainer div {
+        max-width: 100%;
+    }
+
+    .productsContainer img {
+        max-height: 160px;
+    }
+
+    .productsContainer p {
+        font-size: 0.9rem;
+    }
+
+    .productsContainer button {
+        font-size: 0.85rem;
+    }
+
+}
